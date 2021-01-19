@@ -1,0 +1,44 @@
+img,
+video {
+  max-width: 100%;
+}
+
+body {
+  margin: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  body {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.media {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.media .caption {
+  margin-top: 0;
+  color: gray;
+  font-style: italic;
+}
+
+.media .print {
+  display: none;
+}
+
+@media print {
+  .media video,
+  .media audio {
+    display: none;
+  }
+  .media .print {
+    display: block;
+  }
+  .media .print p {
+    margin: 0;
+  }
+}
